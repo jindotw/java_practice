@@ -35,6 +35,9 @@ public class Start {
                         System.out.println("Exercise no #" + choice + " is not in the Exercise Map");
                         continue;
                     }
+                    System.out.println("[" + ex.getTitle() + "]");
+                    System.out.println(ex.getDesc());
+                    System.out.println();
                     ex.doExercise();
                 } catch (NumberFormatException e) {
                 }
